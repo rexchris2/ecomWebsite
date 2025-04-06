@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nike Air Force 1 '07</title>
+  <!-- Style Sheet -->
+  <link rel="stylesheet" href="../CSS/item.css">
+  <!-- Nav Bar Style -->
+  <link rel="stylesheet" href="../CSS/navbar.css">
+  <!-- Button Styles -->
+  <link rel="stylesheet" href="../CSS/buttons.css">
+  <!-- Footer Style Sheet -->
+  <link rel="stylesheet" href="../CSS/footer.css">
+  <!-- Icons -->
+  <link href="https://unpkg.com/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <!-- Review Star -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Review User Score -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- User Review CSS -->
+  <link rel="stylesheet" href="../CSS/user_review.css">
+</head>
+<style>
+  .checked {
+    color: orange;
+  }
+</style>
+<script src="../JS/accLogged.js"></script>
+
+<body>
+  <!-- Main Nav Bar -->
+  <div class="navbar">
+    <div class="left-navbar">
+      <a href="../index.html" class="logo"><i class='bx bxl-opera'></i></a>
+       <!-- Search Bar -->
+       <div class="searchBox">
+
+        <input class="searchInput"type="text" name="" placeholder="Search">
+        <button class="searchButton" href="#">
+          <i class='bx bx-search'></i>
+        </button>
+    </div>
+    </div>
+
+    <!-- Categories -->
+    <div class="categories">
+      <ul class="menu">
+        <li class="menu-item"><a href="../product.html">Featured</a>
+          <ul class="dropdown">
+            <li><a href="item.html">Running Shoes</a></li>
+            <li><a href="item.html">Basketball Shoes</a></li>
+            <li><a href="item.html">Clothing</a></li>
+            <li><a href="item.html">Accessories</a></li>
+          </ul>
+        </li>
+        <li class="menu-item"><a href="../product.html">New</a>
+          <ul class="dropdown">
+            <li><a href="item.html">Running Shoes</a></li>
+            <li><a href="item.html">Basketball Shoes</a></li>
+            <li><a href="item.html">Clothing</a></li>
+            <li><a href="item.html">Accessories</a></li>
+          </ul>
+        </li>
+        <li class="menu-item"><a href="../product.html">Men</a>
+          <ul class="dropdown">
+            <li><a href="item.html">Running Shoes</a></li>
+            <li><a href="item.html">Basketball Shoes</a></li>
+            <li><a href="item.html">Clothing</a></li>
+            <li><a href="item.html">Accessories</a></li>
+          </ul>
+        </li>
+        <li class="menu-item"><a href="../product.html">Women</a>
+          <ul class="dropdown">
+            <li><a href="item.html">Running Shoes</a></li>
+            <li><a href="item.html">Basketball Shoes</a></li>
+            <li><a href="item.html">Clothing</a></li>
+            <li><a href="item.html">Accessories</a></li>
+          </ul>
+        </li>
+        <li class="menu-item"><a href="../product.html">Kids</a>
+          <ul class="dropdown">
+            <li><a href="item.html">Running Shoes</a></li>
+            <li><a href="item.html">Basketball Shoes</a></li>
+            <li><a href="item.html">Clothing</a></li>
+            <li><a href="item.html">Accessories</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Account Nav -->
+    <div class="Acc_Nav">
+      <a href="../favorite.html" id="fav-but" class="account"><button><i class='bx bxs-heart'></i></button></a>
+      <a href="../account_page.html" id="acc-but" class="account"><button><i class='bx bx-user'></i></button></a>
+      <a href="../cart.html" id="cart-but" class="account"><button><i class='bx bxs-cart'></i></button></a>
+      <a href="../login.html" id="login-but" class="user"><button>Login</button></a>
+      <a href="../register.html" id="signup-but" class="user"><button>Sign Up</button></a>
+      <a href="#" id="logout-but" class="user"><button>Logout</button></a>
+    </div>
+  </div>
+  </div>
+
+  <!-- Add Main Code Here! -->
+
+  <section class="item-display">
+    <!-- Individual shoe item -->
+    <article class="shoe-item">
+      <img src="../image/AIR+FORCE+1+'07.png" alt="Stylish Running Shoe">
+      <div class="shoe-details">
+        <h2 class="shoe-name">Nike Air Force 1 '07</h2>
+       
+        <p class="shoe-price">$115</p>
+
+        <!-- Size selection -->
+        <label for="size-select">Select Size</label>
+        <div class="size-buttons">
+          <button class="size-btn" data-size="6">W 6 / M 4.5</button>
+          <button class="size-btn" data-size="6.5">W 6.5 / M 5</button>
+          <button class="size-btn" data-size="7">W 7 / M 5.5</button>
+          <button class="size-btn" data-size="7.5">W 7.5 / M 6</button>
+          <button class="size-btn" data-size="8">W 8 / M 6.5</button>
+          <button class="size-btn" data-size="8.5">W 8.5 / M 7</button>
+          <button class="size-btn" data-size="9">W 9 / M 7.5</button>
+          <button class="size-btn" data-size="9.5">W 9.5 / M 8</button>
+          <button class="size-btn" data-size="10">W 10 / M 8.5</button>
+          <button class="size-btn" data-size="10.5">W 10.5 / M 9</button>
+          <button class="size-btn" data-size="11">W 11 / M 9.5</button>
+          <button class="size-btn" data-size="11.5">W 11.5 / M 10</button>
+          <button class="size-btn" data-size="12">W 12 / M 10.5</button>
+        </div>
+
+        <!-- Action buttons -->
+        <button class="add-to-bag">Add to Bag</button>
+        <button class="add-to-fav"><i class='bx bx-heart'></i></button>
+      </div>
+    </article>
+  </section>
+
+
+  <!-- Review header -->
+  <div class="review-header">
+    <h1>Customer Review</h1>
+  </div>
+
+  <!-- User Review -->
+  <div class="user-review-container">
+    <span class="heading">User Rating</span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <p>4.1 average based on 254 reviews.</p>
+    <hr style="border:3px solid #f1f1f1">
+
+    <div class="row">
+      <div class="side">
+        <div>5 star</div>
+      </div>
+      <div class="middle">
+        <div class="bar-container">
+          <div class="bar-5"></div>
+        </div>
+      </div>
+      <div class="side right">
+        <div>150</div>
+      </div>
+      <div class="side">
+        <div>4 star</div>
+      </div>
+      <div class="middle">
+        <div class="bar-container">
+          <div class="bar-4"></div>
+        </div>
+      </div>
+      <div class="side right">
+        <div>63</div>
+      </div>
+      <div class="side">
+        <div>3 star</div>
+      </div>
+      <div class="middle">
+        <div class="bar-container">
+          <div class="bar-3"></div>
+        </div>
+      </div>
+      <div class="side right">
+        <div>15</div>
+      </div>
+      <div class="side">
+        <div>2 star</div>
+      </div>
+      <div class="middle">
+        <div class="bar-container">
+          <div class="bar-2"></div>
+        </div>
+      </div>
+      <div class="side right">
+        <div>6</div>
+      </div>
+      <div class="side">
+        <div>1 star</div>
+      </div>
+      <div class="middle">
+        <div class="bar-container">
+          <div class="bar-1"></div>
+        </div>
+      </div>
+      <div class="side right">
+        <div>20</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Top Review -->
+   <div class="review-header">
+    <h1>Top Reviews</h1>
+   </div>
+
+  <!-- Review Container -->
+<div class="review-container">
+  <div class="review">
+    <p>"The service was excellent, and the staff was very friendly. Highly recommend!"</p>
+    <h4>John Doe</h4>
+    <!-- Review Stars -->
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+  </div>
+  <div class="review">
+    <p>"Good experience overall, but there is room for improvement in the waiting time."</p>
+    <h4>Jane Smith</h4>
+    <!-- Review Stars -->
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+  </div>
+  <div class="review">
+    <p>"Fantastic quality and attention to detail. I will definitely come back!"</p>
+    <h4>Michael Brown</h4>
+    <!-- Review Stars -->
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+  </div>
+  <div class="review">
+    <p>"The ambiance was nice, but the food could have been better."</p>
+    <h4>Sarah Wilson</h4>
+    <!-- Review Stars -->
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+  </div>
+  <div class="review">
+    <p>"Great value for money. I'll be recommending this to my friends!"</p>
+    <h4>Emily Davis</h4>
+    <!-- Review Stars -->
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+  </div>
+</div>
+
+
+
+  <!-- TO DO --- ADD REVIEWS! -->
+
+
+  <!-- Footer -->
+  <footer>
+    <div>
+      <a href="about_us.html">About Us</a>
+      <a href="faq.html">FAQ</a>
+    </div><br>
+    <div class="social-icons">
+      <a href="https://www.facebook.com"><i class='bx bxl-facebook'></i></a>
+      <a href="https://www.instagram.com"><i class='bx bxl-instagram'></i></a>
+      <a href="https://twitter.com"><i class='bx bxl-twitter'></i></a>
+    </div>
+    <div class="contact-form">
+      <br><br><a href="#">Contact Us</a><br><br>
+      <form>
+        <div class="info-box">
+          <input type="email" class="info-field" placeholder="Email" autocomplete="off" required>
+        </div>
+        <div class="info-box">
+          <input type="tel" class="info-field" placeholder="Phone Number" autocomplete="off" required>
+        </div>
+        <div class="info-box">
+          <button class="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <div>
+      <br><br><br>
+      <p style="color: white;">&copy; 2024 VogueSteps. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
