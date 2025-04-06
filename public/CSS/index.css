@@ -1,0 +1,118 @@
+
+.mySlides img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  margin-top: -35px;
+}
+.home-pic img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  margin-top: -35px;
+}
+
+.phrase {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.phrase2 {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.features {
+  text-align: center;
+}
+
+.top {
+  padding-bottom: 100px;
+}
+
+.item-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+}
+.item-grid p {
+  font-weight: bold;
+}
+
+.items {
+  text-align: center;
+  border: 1px solid #f1efef;
+  padding: 12px 0px 60px 0px;
+  border-radius: 8px;
+  transition: box-shadow 0.15s, opacity 0.20s;
+}
+
+.items img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.items img:hover {
+  box-shadow: 5px 5px 15px rgba(31, 30, 87, 0.7);
+  transform: scale(1.05);
+}
+
+.items img:active {
+  opacity: 0.4;
+  transform: scale(0.95);
+}
+
+.item-grid p {
+  padding: 25px 0px 25px 0px;
+}
+
+.promo-banner-container {
+  width: 100%;
+  background-color: #ff4500;
+  color: #ffff;
+  overflow: hidden;
+  padding: 12px 0;
+  margin-bottom: 20px;
+}
+
+.promo-banner {
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+
+.promo-content {
+  display: inline-block;
+  animation: scroll 30s linear infinite;
+  padding-left: 0; /* Remove padding that causes gaps */
+}
+
+.promo-content span {
+  display: inline-block;
+  font-size: 14px;
+  padding: 0 20px;
+}
+
+.separator {
+  color: #04ff32;
+  margin: 0 10px;
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-50%); /* Adjust to scroll only half of the full content length */
+  }
+}
+
+/* Pause animation on hover */
+.promo-banner:hover .promo-content {
+  animation-play-state: paused;
+}

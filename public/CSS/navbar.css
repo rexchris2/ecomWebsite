@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding-top: 100px;
+}
+
+.logo img{
+  width: 45px;
+  height: 45px;
+}
+
+/* Main Nav Bar */
+.navbar {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #111111;
+  color: #fff;
+  backdrop-filter: blur(10px);
+  z-index: 1;
+}
+
+.navbar .logo {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Account buttons container */
+.navbar .Acc_Nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Account buttons */
+.navbar .account .user {
+  margin-right: 10px;
+}
+
+.navbar .account button {
+  padding: 10px 10px;
+  border: none;
+  background-color: #111111;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 4px;
+  align-items: center;
+  transition: background-color 0.5s, opacity 0.20s;
+  transition: all 0.3s ease;
+}
+
+.navbar .account button:hover {
+  box-shadow: 5px 5px 15px rgba(31, 30, 87, 0.7);
+  transform: scale(1.4);
+}
+
+.navbar .account button:active {
+  opacity: 0.4;
+  transform: scale(1.00);
+}
+
+.navbar .user button {
+  padding: 10px 10px;
+  border: none;
+  background-color: #111111;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 4px;
+  align-items: center;
+  transition: background-color 0.5s, opacity 0.20s;
+  transition: all 0.3s ease;
+}
+
+.navbar .user button:hover {
+  color: crimson;
+}
+
+.navbar .left-navbar {
+  display: flex;
+  gap: 20px;
+}
+
+/* Search Bar */
+.navbar .search-bar {
+  display: flex;
+  flex: 2;
+  max-width: 400px;
+}
+
+.navbar .search-bar input[type="text"] {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 0px 20px 20px 0px;
+  width: 100%;
+}
+
+.navbar .search-bar .search {
+  width: 35px;
+  padding: 9.5px 1px;
+  border: none;
+  background-color: white;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 20px 0px 0px 20px;
+}
+
+/* categories container */
+.categories{
+margin-right: -83.5px;
+}
+
+/* Entire categories menu styles */
+.menu {
+  list-style: none;
+  display: flex;
+}
+
+.menu-item {
+  position: relative;
+  margin-right: 0 20px;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  display: block;
+
+}
+
+.menu-item a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Dropdown styles */
+.dropdown {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: #333;
+  display: none;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown li {
+  margin: 0;
+}
+
+.dropdown li a {
+  padding: 10px 15px;
+  display: block;
+  color: white;
+}
+
+.dropdown li a:hover {
+  background-color: #555;
+}
+
+
+.menu-item:hover .dropdown {
+  display: block;
+}
+
+
+
+.searchBox {
+  position: absolute;
+  top: -10%;
+  left: 6%;
+  transform:  translate(-1%,50%);
+  /* background: #2f3640; */
+  background: white;
+  height: 38px;
+  border-radius: 40px;
+  padding: 0px;
+}
+
+.searchBox:hover >.searchInput {
+  width: 240px;
+  padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+background: white;
+color : #2f3640;
+}
+
+.searchButton {
+  color: white;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #2f3640;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.searchInput {
+  border:none;
+  background: none;
+  outline:none;
+  float:left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+
+}
+
+@media screen and (max-width: 620px) {
+.searchBox:hover > .searchInput {
+  width: 150px;
+  padding: 0 6px;
+}
+}

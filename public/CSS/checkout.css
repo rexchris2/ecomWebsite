@@ -1,0 +1,90 @@
+/* checkout.css */
+
+/* Checkout container styling */
+.checkout-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .checkout-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Checkout form styling */
+  .checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="tel"] {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #ff9900;
+    box-shadow: 0 0 5px rgba(255, 153, 0, 0.2);
+  }
+  
+  /* Complete Purchase Button */
+  .checkout-btn {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .checkout-btn:hover {
+    background-color: #e68900;
+    transform: scale(1.05);
+  }
+  
+  .checkout-btn:active {
+    background-color: #d27d00;
+    transform: scale(1.02);
+  }
+  
+  /* Responsive design adjustments */
+  @media (max-width: 768px) {
+    .checkout-container {
+      padding: 1.5rem;
+    }
+  
+    .checkout-btn {
+      font-size: 1.1rem;
+    }
+  }
+  

@@ -1,0 +1,220 @@
+/* Main Layout */
+body {
+    font-family: Arial, sans-serif;
+    /* margin: 0; */
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  .detail-style p{
+    font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  } 
+  .detail-style button{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px 10px;
+  border: none;
+  background-color: #111111;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 4px;
+  align-items: center;
+  transition: background-color 0.5s, opacity 0.20s;
+  transition: all 0.3s ease;
+  }
+  .detail-style button:hover{
+    box-shadow: 5px 5px 15px rgba(31, 30, 87, 0.7);
+    transform: scale(1.1);
+  }
+.detail-style button:active{
+  opacity: 0.4;
+  transform: scale(.90);
+}
+  .account-box{
+    border-radius: 8px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    border-color: #f1efef;
+    border-style: solid;  
+
+  }
+  /* Sidebar Navigation */
+   .sidebar {
+    width: 250px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: #333;
+    margin-top: 65px;
+    z-index: 1;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+    /* z-index: 1; Ensure sidebar stays on top */
+  
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    text-align: left;
+    padding: 10px;
+  }
+  
+  .sidebar a {
+    display: block;
+    position: relative;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar a:hover {
+    background-color: #575757;
+  }
+  
+  /* Content Section */
+  .content {
+    margin-left: 250px; /* Adjusted to accommodate sidebar */
+    padding: 20px;
+    background-color: #fff;
+    min-height: 100vh;
+    box-sizing: border-box; /* Prevents content from overflowing */
+  }
+  
+  /* Styling for Page Headers */
+  h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  section {
+    margin-bottom: 30px;
+  }
+  
+  section h3 {
+    color: #555;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+
+  .name-fields {
+    display: flex;
+    gap: 20px; 
+  }
+  
+  .name-fields .form-group {
+    flex: 1; 
+  }
+  
+  /* Form Inputs */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="password"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Focus on Inputs */
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus,
+  input[type="password"]:focus,
+  textarea:focus {
+    border-color: #f0c419;
+    outline: none;
+  }
+
+  
+   input::placeholder,
+textarea::placeholder {
+   color: #ccc; /*Light color for placeholder  */
+  font-weight: normal;
+} 
+
+  
+  .acc_button {
+    padding: 12px 20px;
+    background-color: rgb(3, 3, 3);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .acc_button:hover {
+    background-color: #e0a117;
+  }
+  
+  
+  
+   Footer 
+  footer {
+    background-color: #26272b;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    border-top: 1px solid #ddd;
+  }
+  
+  footer a {
+    color: #f7f2f2;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px;
+  }
+  
+  footer a:hover {
+    color: #f0c419;
+  }
+  
+  footer .social-icons {
+    margin-top: 15px;
+  }
+  
+  footer .social-icons a {
+    font-size: 20px;
+    margin: 0 10px;
+  }
+  
+  footer .social-icons a:hover {
+    color: #f0c419;
+  }
+
+  
+  
+  /* Contact Form */
+  footer .contact-form {
+    margin-top: 20px;
+  }
+  
+  footer .info-field {
+    width: 60%;
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    
+  }  
+  
+  
