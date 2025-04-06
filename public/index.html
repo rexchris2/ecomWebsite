@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <!-- Home Style Sheet -->
+  <link rel="stylesheet" href="CSS/index.css">
+  <!-- Nav bar Style Sheet -->
+  <link rel="stylesheet" href="CSS/navbar.css">
+  <!-- Button Styles -->
+  <link rel="stylesheet" href="CSS/buttons.css">
+  <!-- Footer Style Sheet -->
+  <link rel="stylesheet" href="CSS/footer.css">
+  <!-- Icons -->
+  <link href="https://unpkg.com/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <style>
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .9
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+    .dark-mode{
+    background-color: #111111;
+    color: white;
+  }
+  </style>
+  <script src="JS/accLogged.js"></script>
+  <script src="JS/darkmode.js"></script>
+</head>
+
+
+
+<body>
+
+  <!-- Main Nav Bar -->
+  <div class="navbar">
+    <div class="left-navbar">
+      <a href="index.html" class="logo"><i class='bx bxl-opera'></i></a>
+      <!-- Search Bar
+      <div class="search-bar">
+        <button class="search">🔍</button>
+        <input type="text" placeholder="Search products">
+      </div> -->
+
+      <!-- <div class="searchBar">
+        <input class="searchInput" type="text" placeholder="Search product">
+        <button class="searchButton"><i class='bx bx-search'></i> 
+        </button>
+      </div> -->
+      <div class="searchBox">
+
+        <input class="searchInput"type="text" name="" placeholder="Search">
+        <button class="searchButton" href="#">
+          <i class='bx bx-search'></i>
+        </button>
+    </div>
+
+  
+
+   
+  </div>
+
+
+    <!-- Categories -->
+    <div class="categories">
+      <ul class="menu">
+        <li class="menu-item"><a href="product.html">Featured</a>
+          <ul class="dropdown">
+            <li><a href="item.html">Running Shoes</a></li>
+            <li><a href="item.html">Basketball Shoes</a></li>
+            <li><a href="item.html">Clothing</a></li>
+            <li><a href="item.html">Accessories</a></li>
+          </ul>
+        </li>
+        <li class="menu-item"><a href="product.html">New</a>
+          <ul class="dropdown">
+            <li><a href="item.html">Running Shoes</a></li>
+            <li><a href="item.html">Basketball Shoes</a></li>
+            <li><a href="item.html">Clothing</a></li>
+            <li><a href="item.html">Accessories</a></li>
+          </ul>
+        </li>
+        <li class="menu-item"><a href="product.html">Men</a>
+          <ul class="dropdown">
+            <li><a href="item.html">Running Shoes</a></li>
+            <li><a href="item.html">Basketball Shoes</a></li>
+            <li><a href="item.html">Clothing</a></li>
+            <li><a href="item.html">Accessories</a></li>
+          </ul>
+        </li>
+        <li class="menu-item"><a href="product.html">Women</a>
+          <ul class="dropdown">
+            <li><a href="item.html">Running Shoes</a></li>
+            <li><a href="item.html">Basketball Shoes</a></li>
+            <li><a href="item.html">Clothing</a></li>
+            <li><a href="item.html">Accessories</a></li>
+          </ul>
+        </li>
+        <li class="menu-item"><a href="product.html">Kids</a>
+          <ul class="dropdown">
+            <li><a href="item.html">Running Shoes</a></li>
+            <li><a href="item.html">Basketball Shoes</a></li>
+            <li><a href="item.html">Clothing</a></li>
+            <li><a href="item.html">Accessories</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      
+    </div>
+
+    <!-- Account Nav -->
+    <div class="Acc_Nav">
+      <a href="favorite.html" id="fav-but" class="account"><button><i class='bx bxs-heart'></i></button></a>
+      <a href="account_page.html" id="acc-but" class="account"><button><i class='bx bx-user'></i></button></a>
+      <a href="cart.html" id="cart-but" class="account"><button><i class='bx bxs-cart'></i></button></a>
+      <a href="login.html" id="login-but" class="user"><button>Login</button></a>
+      <a href="register.html" id="signup-but" class="user"><button>Sign Up</button></a>
+      <a href="#" id="logout-but" class="user"><button>Logout</button></a>
+    </div>
+  </div>
+  </div>
+
+  <!-- Add Main Code Here! -->
+
+
+
+  <div class="top">
+
+    <!-- Main home pic -->
+    <div class="slideshow-container">
+      <!-- Slide pic -->
+      <div class="mySlides fade">
+        <img src="image/background2.jpg">
+      </div>
+      <!-- Slide pic -->
+      <div class="mySlides fade">
+        <img src="image/background7.jpg">
+      </div>
+       <!-- Slide pic -->
+       <div class="mySlides fade">
+        <img src="image/background6.jpg">
+      </div>
+      <!-- Slide pic -->
+      <div class="mySlides fade">
+        <img src="image/background8.jpg">
+      </div>
+      <!-- Slide pic -->
+      <div class="mySlides fade">
+        <img src="image/background9.jpg">
+      </div>
+      <!-- Slide pic -->
+      <div class="mySlides fade">
+        <img src="image/background5.jpg">
+      </div>
+    </div>
+
+    <!-- <div class="home-pic">
+      <img src="image/jordan-shoes-g8km3zwrx9ty5a9y.jpg">
+    </div> -->
+
+
+    <div class="features">
+      <p class="phrase">Unleash Your Potential</p>
+      <p class="phrase2">Made for those who push boundaries, one step at a time</p>
+      <a href="product.html"><button class="shop-button">Discover Your Style</button></a>
+
+
+    </div>
+  </div>
+  <!-- <section id="theme">
+    <h2>Theme</h2>
+    <button onclick="darkFunction()" class="acc_button" id="toggleTheme">Toggle Dark Mode</button>
+  </section>
+</div> -->
+
+
+<div class="promo-banner-container">
+  <div class="promo-banner">
+    <div class="promo-content">
+      <span>30-day hassle-free returns on all orders</span>
+      <span class="separator">•</span>
+      <span>Free shipping on orders over $100</span>
+      <span class="separator">•</span>
+      <span>Sign up for 10% off your first order</span>
+      <span class="separator">•</span>
+      <span>Student discount available</span>
+
+      <span>30-day hassle-free returns on all orders</span>
+      <span class="separator">•</span>
+      <span>Free shipping on orders over $100</span>
+      <span class="separator">•</span>
+      <span>Sign up for 10% off your first order</span>
+      <span class="separator">•</span>
+      <span>Student discount available</span>
+    </div>
+  </div>
+</div>
+
+
+  <h1 style="margin-bottom: 20px;text-align: center;">NEW ARRIVALS</h1>
+  <!-- Grid for displaying item -->
+  <div class="item-grid">
+    <!-- Item Class -->
+    <div class="items">
+      <a href="ShoeFolder/nikecity.html"><img src="image/NIKE+C1TY.png"></a>
+      <p>Nike C1TY</p>
+      <p2>$100</p2>
+    </div>
+    <!-- Item Class -->
+    <div class="items">
+      <a href="ShoeFolder/airJordanRetro.html"><img src="image/AIR+JORDAN+11+RETRO.png"></a>
+      <p>Air Jordan 11 Retro "Legend Blue"</p>
+      <p2>$230</p2>
+    </div>
+    <!-- Item Class -->
+    <div class="items">
+      <a href="ShoeFolder/gameRoyal.html"><img src="image/AIR+JORDAN+1+RETRO+LOW+OG.png"></a>
+      <p>Air Jordan 1 Low "Game Royal"</p>
+      <p2>$140</p2>
+    </div>
+    <!-- Item Class -->
+    <div class="items">
+      <a href="ShoeFolder/airmaxDN.html"><img src="image/AIR+MAX+DN.png"></a>
+      <p>Nike Air Max Dn</p>
+      <p2>$160</p2>
+    </div>
+    <!-- Item Class -->
+    <div class="items">
+      <a href="ShoeFolder/airJordan3CementGrey.html"><img src="image/AIR+JORDAN+3+RETRO.png"></a>
+      <p>Air Jordan 3 Retro "Cement Grey"</p>
+      <p2>$200</p2>
+    </div>
+    <!-- Item Class -->
+    <div class="items">
+      <a href="ShoeFolder/af1.html"><img src="image/AIR+FORCE+1+'07.png"></a>
+      <p>Nike Air Force 1 '07</p>
+      <p2>$115</p2>
+    </div>
+  </div>
+
+
+  <footer>
+    <div>
+      <a href="about_us.html">About Us</a>
+      <a href="faq.html">FAQ</a>
+    </div><br>
+    <div class="social-icons">
+      <a href="https://www.facebook.com"><i class='bx bxl-facebook'></i></a>
+      <a href="https://www.instagram.com"><i class='bx bxl-instagram'></i></a>
+      <a href="https://twitter.com"><i class='bx bxl-twitter'></i></a>
+    </div>
+    <div class="contact-form">
+      <br><br><a href="#">Contact Us</a><br><br>
+      <form>
+        <div class="info-box">
+          <input type="email" class="info-field" placeholder="Email" autocomplete="off" required>
+        </div>
+        <div class="info-box">
+          <input type="tel" class="info-field" placeholder="Phone Number" autocomplete="off" required>
+        </div>
+        <div class="info-box">
+          <button class="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <div>
+      <br><br><br>
+      <p style="color: white;">&copy; 2024 VogueSteps. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS for Slide Show -->
+  <script>
+    let slideIndex = 0;
+    showSlides();
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+
+      }
+      slides[slideIndex - 1].style.display = "block";
+      // Timer for slide show 5000 = 5 seconds
+      setTimeout(showSlides, 5000);
+    }
+  </script>
+</body>
+
+</html>

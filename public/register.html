@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <!-- Style Sheet -->
+  <link rel="stylesheet" href="CSS/register.css">
+  <!-- Nav Bar Style -->
+  <link rel="stylesheet" href="CSS/navbar.css">
+  <!-- Button Styles -->
+  <link rel="stylesheet" href="CSS/buttons.css">
+  <!-- Footer Style Sheet -->
+  <link rel="stylesheet" href="CSS/footer.css">
+  <!-- Icons -->
+  <link href="https://unpkg.com/boxicons/css/boxicons.min.css" rel="stylesheet">
+</head>
+<script src="JS/accLogged.js"></script>
+
+<body>
+  <!-- Main Nav Bar -->
+  <div class="navbar">
+    <div class="left-navbar">
+      <a href="index.html" class="logo"><i class='bx bxl-opera'></i></a>
+      <!-- Search Bar -->
+      <div class="searchBox">
+
+        <input class="searchInput" type="text" name="" placeholder="Search">
+        <button class="searchButton" href="#">
+          <i class='bx bx-search'></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Categories -->
+    <div class="categories">
+      <ul class="menu">
+        <li class="menu-item"><a href="product.html">Featured</a>
+          <ul class="dropdown">
+            <li><a href="item.html">Running Shoes</a></li>
+            <li><a href="item.html">Basketball Shoes</a></li>
+            <li><a href="item.html">Clothing</a></li>
+            <li><a href="item.html">Accessories</a></li>
+          </ul>
+        </li>
+        <li class="menu-item"><a href="product.html">New</a>
+          <ul class="dropdown">
+            <li><a href="item.html">Running Shoes</a></li>
+            <li><a href="item.html">Basketball Shoes</a></li>
+            <li><a href="item.html">Clothing</a></li>
+            <li><a href="item.html">Accessories</a></li>
+          </ul>
+        </li>
+        <li class="menu-item"><a href="product.html">Men</a>
+          <ul class="dropdown">
+            <li><a href="item.html">Running Shoes</a></li>
+            <li><a href="item.html">Basketball Shoes</a></li>
+            <li><a href="item.html">Clothing</a></li>
+            <li><a href="item.html">Accessories</a></li>
+          </ul>
+        </li>
+        <li class="menu-item"><a href="product.html">Women</a>
+          <ul class="dropdown">
+            <li><a href="item.html">Running Shoes</a></li>
+            <li><a href="item.html">Basketball Shoes</a></li>
+            <li><a href="item.html">Clothing</a></li>
+            <li><a href="item.html">Accessories</a></li>
+          </ul>
+        </li>
+        <li class="menu-item"><a href="product.html">Kids</a>
+          <ul class="dropdown">
+            <li><a href="item.html">Running Shoes</a></li>
+            <li><a href="item.html">Basketball Shoes</a></li>
+            <li><a href="item.html">Clothing</a></li>
+            <li><a href="item.html">Accessories</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Account Nav -->
+    <div class="Acc_Nav">
+      <a href="favorite.html" id="fav-but" class="account"><button><i class='bx bxs-heart'></i></button></a>
+      <a href="account_page.html" id="acc-but" class="account"><button><i class='bx bx-user'></i></button></a>
+      <a href="cart.html" id="cart-but" class="account"><button><i class='bx bxs-cart'></i></button></a>
+      <a href="login.html" id="login-but" class="user"><button>Login</button></a>
+      <a href="register.html" id="signup-but" class="user"><button>Sign Up</button></a>
+      <a href="#" id="logout-but" class="user"><button>Logout</button></a>
+    </div>
+  </div>
+  </div>
+
+
+
+  <!-- Add Main Code Here! -->
+
+
+
+  <!-- Main container for the sign-up form -->
+  <div class="signup-box">
+    <!-- Header for the sign-up form -->
+    <div class="signup-header">
+      <header>Sign Up</header>
+    </div>
+
+    <!-- Sign-up form fields -->
+    <form action="/register" method="post">
+      <!-- First name field -->
+      <div class="input-box">
+        <input type="text" class="input-field" id="firstname" name="firstname" placeholder="First Name" required>
+      </div>
+      <!-- Last name field -->
+      <div class="input-box">
+        <input type="text" class="input-field" id="lastname" name="lastname" placeholder="Last Name" required>
+      </div>
+      <!-- Email field -->
+      <div class="input-box">
+        <input type="email" class="input-field" id="email" name="email" placeholder="Email" required>
+      </div>
+      <!-- Password field -->
+      <div class="input-box">
+        <input type="password" class="input-field" id="password" name="password" placeholder="Password" required>
+      </div>
+
+      <!-- Street -->
+      <div class="input-box">
+        <input type="street" class="input-field" id="street" name="street" placeholder="Street" required>
+    </div>
+
+      <!-- City -->
+      <div class="input-box">
+        <input type="city" class="input-field" id="city" name="city" placeholder="City" required>
+      </div>
+
+      <!-- State -->
+      <div class="input-box">
+        <input type="state" class="input-field" id="state" name="state" placeholder="State" required>
+      </div>
+
+      <!-- Zip -->
+      <div class="input-box">
+        <input type="zip" class="input-field" id="zip" name="zip" placeholder="Zip" required>
+      </div>
+
+      <!-- Submit button for form submission -->
+      <div class="input-submit">
+        <button class="submit-btn">Register</button>
+      </div>
+    </form>
+
+    <!-- Link for users to switch to login page -->
+    <div class="auth-link">
+      <p>Already have an account? <a href="login.html">Log in</a></p>
+    </div>
+  </div>
+  
+
+
+
+
+
+  <!----------------------- Footer ------------------------------>
+  <footer>
+    <div>
+      <a href="about_us.html">About Us</a>
+      <a href="faq.html">FAQ</a>
+    </div><br>
+    <div class="social-icons">
+      <a href="https://www.facebook.com"><i class='bx bxl-facebook'></i></a>
+      <a href="https://www.instagram.com"><i class='bx bxl-instagram'></i></a>
+      <a href="https://twitter.com"><i class='bx bxl-twitter'></i></a>
+    </div>
+    <div class="contact-form">
+      <br><br><a href="#">Contact Us</a><br><br>
+      <form>
+        <div class="info-box">
+          <input type="email" class="info-field" placeholder="Email" autocomplete="off" required>
+        </div>
+        <div class="info-box">
+          <input type="tel" class="info-field" placeholder="Phone Number" autocomplete="off" required>
+        </div>
+        <div class="info-box">
+          <button class="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <div>
+      <br><br><br>
+      <p style="color: white;">&copy; 2024 VogueSteps. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

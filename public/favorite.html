@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favorites</title>
+  <!-- Style Sheets -->
+  <link rel="stylesheet" href="CSS/navbar.css">
+  <link rel="stylesheet" href="CSS/buttons.css">
+  <link rel="stylesheet" href="CSS/footer.css">
+  <link rel="stylesheet" href="CSS/favorites.css"> <!-- Custom CSS for the favorites page -->
+  <!-- Icons -->
+  <link href="https://unpkg.com/boxicons/css/boxicons.min.css" rel="stylesheet">
+</head>
+<script src="JS/accLogged.js"></script>
+<body>
+  <!-- Main Nav Bar -->
+  <div class="navbar">
+    <div class="left-navbar">
+      <a href="index.html" class="logo"><i class='bx bxl-opera'></i></a>
+       <!-- Search Bar -->
+       <div class="searchBox">
+
+        <input class="searchInput"type="text" name="" placeholder="Search">
+        <button class="searchButton" href="#">
+          <i class='bx bx-search'></i>
+        </button>
+    </div>
+    </div>
+
+    <!-- Categories -->
+    <div class="categories">
+      <ul class="menu">
+        <li class="menu-item"><a href="product.html">Featured</a>
+          <ul class="dropdown">
+            <li><a href="item.html">Running Shoes</a></li>
+            <li><a href="item.html">Basketball Shoes</a></li>
+            <li><a href="item.html">Clothing</a></li>
+            <li><a href="item.html">Accessories</a></li>
+          </ul>
+        </li>
+        <li class="menu-item"><a href="product.html">New</a>
+          <ul class="dropdown">
+            <li><a href="item.html">Running Shoes</a></li>
+            <li><a href="item.html">Basketball Shoes</a></li>
+            <li><a href="item.html">Clothing</a></li>
+            <li><a href="item.html">Accessories</a></li>
+          </ul>
+        </li>
+        <li class="menu-item"><a href="product.html">Men</a>
+          <ul class="dropdown">
+            <li><a href="item.html">Running Shoes</a></li>
+            <li><a href="item.html">Basketball Shoes</a></li>
+            <li><a href="item.html">Clothing</a></li>
+            <li><a href="item.html">Accessories</a></li>
+          </ul>
+        </li>
+        <li class="menu-item"><a href="product.html">Women</a>
+          <ul class="dropdown">
+            <li><a href="item.html">Running Shoes</a></li>
+            <li><a href="item.html">Basketball Shoes</a></li>
+            <li><a href="item.html">Clothing</a></li>
+            <li><a href="item.html">Accessories</a></li>
+          </ul>
+        </li>
+        <li class="menu-item"><a href="product.html">Kids</a>
+          <ul class="dropdown">
+            <li><a href="item.html">Running Shoes</a></li>
+            <li><a href="item.html">Basketball Shoes</a></li>
+            <li><a href="item.html">Clothing</a></li>
+            <li><a href="item.html">Accessories</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Account Nav -->
+    <div class="Acc_Nav">
+      <a href="favorite.html" id="fav-but" class="account"><button><i class='bx bxs-heart'></i></button></a>
+      <a href="account_page.html" id="acc-but" class="account"><button><i class='bx bx-user'></i></button></a>
+      <a href="cart.html" id="cart-but" class="account"><button><i class='bx bxs-cart'></i></button></a>
+      <a href="login.html" id="login-but" class="user"><button>Login</button></a>
+      <a href="register.html" id="signup-but" class="user"><button>Sign Up</button></a>
+      <a href="#" id="logout-but" class="user"><button>Logout</button></a>
+    </div>
+  </div>
+
+  <!-- Favorites Section -->
+  <section class="favorites-container">
+    <h2>Your Favorites</h2>
+    
+    <div class="favorite-item">
+      <img src="https://via.placeholder.com/150" alt="Product Image" class="item-image">
+      <div class="item-details">
+        <h3>Product Name</h3>
+        <p>Price: $XX.XX</p>
+        <a href="item.html" class="view-details-btn">View Details</a>
+        <button class="remove-favorite-btn">Remove</button>
+      </div>
+    </div>
+
+    <div class="favorite-item">
+      <img src="https://via.placeholder.com/150" alt="Product Image" class="item-image">
+      <div class="item-details">
+        <h3>Product Name</h3>
+        <p>Price: $XX.XX</p>
+        <a href="item.html" class="view-details-btn">View Details</a>
+        <button class="remove-favorite-btn">Remove</button>
+      </div>
+    </div>
+
+    <!-- More favorite items can be added similarly -->
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div>
+      <a href="about_us.html">About Us</a>
+      <a href="faq.html">FAQ</a>
+    </div><br>
+    <div class="social-icons">
+      <a href="https://www.facebook.com"><i class='bx bxl-facebook'></i></a>
+      <a href="https://www.instagram.com"><i class='bx bxl-instagram'></i></a>
+      <a href="https://twitter.com"><i class='bx bxl-twitter'></i></a>
+    </div>
+    <div class="contact-form">
+      <br><br><a href="#">Contact Us</a><br><br>
+      <form>
+        <div class="info-box">
+          <input type="email" class="info-field" placeholder="Email" autocomplete="off" required>
+        </div>
+        <div class="info-box">
+          <input type="tel" class="info-field" placeholder="Phone Number" autocomplete="off" required>
+        </div>
+        <div class="info-box">
+          <button class="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <div>
+      <br><br><br>
+      <p style="color: white;">&copy; 2024 VogueSteps. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

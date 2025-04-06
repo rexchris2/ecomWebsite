@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product</title>
+  <!-- Style Sheet -->
+  <link rel="stylesheet" href="CSS/product.css">
+  <!-- Nav Bar Style -->
+  <link rel="stylesheet" href="CSS/navbar.css">
+  <!-- Buttons -->
+   <link rel="stylesheet" href="CSS/buttons.css">
+   <!-- Footer Style Sheet -->
+   <link rel="stylesheet" href="CSS/footer.css">
+  <!-- Icons -->
+  <link href="https://unpkg.com/boxicons/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<script src="JS/accLogged.js"></script>
+
+<body>
+<!-- Main Nav Bar -->
+<div class="navbar">
+  <div class="left-navbar">
+    <a href="index.html" class="logo"><i class='bx bxl-opera'></i></a>
+     <!-- Search Bar -->
+     <div class="searchBox">
+
+      <input class="searchInput"type="text" name="" placeholder="Search">
+      <button class="searchButton" href="#">
+        <i class='bx bx-search'></i>
+      </button>
+  </div>
+  </div>
+
+  <!-- Categories -->
+  <div class="categories">
+    <ul class="menu">
+      <li class="menu-item"><a href="product.html">Featured</a>
+        <ul class="dropdown">
+          <li><a href="item.html">Running Shoes</a></li>
+          <li><a href="item.html">Basketball Shoes</a></li>
+          <li><a href="item.html">Clothing</a></li>
+          <li><a href="item.html">Accessories</a></li>
+        </ul>
+      </li>
+      <li class="menu-item"><a href="product.html">New</a>
+        <ul class="dropdown">
+          <li><a href="item.html">Running Shoes</a></li>
+          <li><a href="item.html">Basketball Shoes</a></li>
+          <li><a href="item.html">Clothing</a></li>
+          <li><a href="item.html">Accessories</a></li>
+        </ul>
+      </li>
+      <li class="menu-item"><a href="product.html">Men</a>
+        <ul class="dropdown">
+          <li><a href="item.html">Running Shoes</a></li>
+          <li><a href="item.html">Basketball Shoes</a></li>
+          <li><a href="item.html">Clothing</a></li>
+          <li><a href="item.html">Accessories</a></li>
+        </ul>
+      </li>
+      <li class="menu-item"><a href="product.html">Women</a>
+        <ul class="dropdown">
+          <li><a href="item.html">Running Shoes</a></li>
+          <li><a href="item.html">Basketball Shoes</a></li>
+          <li><a href="item.html">Clothing</a></li>
+          <li><a href="item.html">Accessories</a></li>
+        </ul>
+      </li>
+      <li class="menu-item"><a href="product.html">Kids</a>
+        <ul class="dropdown">
+          <li><a href="item.html">Running Shoes</a></li>
+          <li><a href="item.html">Basketball Shoes</a></li>
+          <li><a href="item.html">Clothing</a></li>
+          <li><a href="item.html">Accessories</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Account Nav -->
+  <div class="Acc_Nav">
+    <a href="favorite.html" id="fav-but" class="account"><button><i class='bx bxs-heart'></i></button></a>
+    <a href="account_page.html" id="acc-but" class="account"><button><i class='bx bx-user'></i></button></a>
+    <a href="cart.html" id="cart-but" class="account"><button><i class='bx bxs-cart'></i></button></a>
+    <a href="login.html" id="login-but" class="user"><button>Login</button></a>
+    <a href="register.html" id="signup-but" class="user"><button>Sign Up</button></a>
+    <a href="#" id="logout-but" class="user"><button>Logout</button></a>
+  </div>
+</div>
+</div>
+
+
+<!-- Add Main Code Here! -->
+<h1 style="text-align: center;margin-bottom: 20px;">Popular Sneakers</h1>
+<!-- Grid for products -->
+<div class="product-grid">
+
+<div class="product">
+  <!-- Product Image -->
+ <a href="/ShoeFolder/airShip.html"><img src="image/JORDAN+AIR+SHIP+PE+SP.png"></a>
+ <h2 class="item-name">Jordan Air Ship PE SP</h2>
+  <p class="descript">$150</p>
+  <div class="button-pad">
+    <!-- Item Button and styles -->
+  <button class="add" id="add-but1">Add to Cart</button>
+  <button class="fav" id="fav-add1"><i class='bx bx-heart'></i></button>
+</div>
+</div>
+<div class="product">
+  <!-- Product Image -->
+  <a href="ShoeFolder/sabrina2.html"><img src="image/SABRINA+2+OR.png"></a>
+  <h2 class="item-name">Sabrina 2 "Retroed"</h2>
+  <p>$130</p>
+  <div class="button-pad">
+    <!-- Item Button and styles -->
+    <button class="add" id="add-but2">Add to Cart</button>
+    <button class="fav" id="fav-add2"><i class='bx bx-heart'></i></button>
+  </div>
+</div>
+<div class="product">
+  <!-- Product Image -->
+  <a href="ShoeFolder/book1.html"><img src="image/BOOK+1.png"></a>
+  <h2 class="item-name">Book 1 "Sunset"</h2>
+  <p>$140</p>
+  <div class="button-pad">
+    <!-- Item Button and styles -->
+    <button class="add" id="add-but3">Add to Cart</button>
+    <button class="fav" id="fav-add3"><i class='bx bx-heart'></i></button>
+  </div>
+</div>
+<div class="product">
+  <!-- Product Image -->
+  <a href="ShoeFolder/jordanlow.html"><img src="image/JORDAN+SPIZIKE+LOW.png"></a>
+  <h2 class="item-name">Jordan Spizike Low</h2>
+  <p>$160</p>
+  <div class="button-pad">
+    <!-- Item Button and styles -->
+    <button class="add" id="add-but4">Add to Cart</button>
+    <button class="fav" id="fav-add4"><i class='bx bx-heart'></i></button>
+  </div>
+</div>
+<div class="product">
+  <!-- Product Image -->
+  <a href="ShoeFolder/peagus.html"><img src="image/NIKE+AIR+PEGASUS+2005.png"></a>
+  <h2 class="item-name">Nike Air Pegasus 2005</h2>
+  <p>$150</p>
+  <div class="button-pad">
+    <!-- Item Button and styles -->
+    <button class="add" id="add-but5">Add to Cart</button>
+    <button class="fav" id="fav-add5"><i class='bx bx-heart'></i></button>
+  </div>
+</div>
+<div class="product">
+  <!-- Product Image -->
+  <a href="ShoeFolder/lowRetor.html"><img src="image/NIKE+DUNK+LOW+RETRO.png"></a>
+  <h2 class="item-name" id="fav-add">Nike Dunk Low Retro</h2>
+  <p>$115</p>
+  <div class="button-pad">
+    <!-- Item Button and styles -->
+    <button class="add" id="add-but6">Add to Cart</button>
+    <button class="fav" id="fav-add6"><i class='bx bx-heart'></i></button>
+  </div>
+</div>
+<div class="product">
+  <!-- Product Image -->
+  <a href="ShoeFolder/jordan5retro.html"><img src="image/AIR+JORDAN+5+RETRO.png"></a>
+  <h2 class="item-name">Air Jordan 5 Retro "White and Black"</h2>
+  <p>$200</p>
+  <div class="button-pad">
+    <!-- Item Button and styles -->
+    <button class="add" id="add-but7">Add to Cart</button>
+    <button class="fav" id="fav-add7"><i class='bx bx-heart'></i></button>
+  </div>
+</div>
+<div class="product">
+  <!-- Product Image -->
+  <a href="ShoeFolder/jumpmanMvp.html"><img src="image/JORDAN+MVP.png"></a>
+  <h2 class="item-name">Jumpman MVP</h2>
+  <p>$123.97</p>
+  <div class="button-pad">
+    <!-- Item Button and styles -->
+    <button class="add" id="add-but8">Add to Cart</button>
+    <button class="fav" id="fav-add8"><i class='bx bx-heart'></i></button>
+  </div>
+</div>
+<div class="product">
+  <!-- Product Image -->
+  <a href="ShoeFolder/evolow.html"><img src="image/AIR+FORCE+1+LOW+EVO.png"></a>
+  <h2 class="item-name">Nike Air Force 1 Low EVO</h2>
+  <p>$115.97</p>
+  <!-- Item Button and styles -->
+  <div class="button-pad">
+    <button class="add" id="add-but9">Add to Cart</button>
+    <button class="fav" id="fav-add9"><i class='bx bx-heart'></i></button>
+  </div>
+</div>
+</div>
+
+
+  <!-- Footer -->
+  <footer>
+    <div>
+      <a href="about_us.html">About Us</a>
+      <a href="faq.html">FAQ</a>
+    </div><br>
+    <div class="social-icons">
+      <a href="https://www.facebook.com"><i class='bx bxl-facebook'></i></a>
+      <a href="https://www.instagram.com"><i class='bx bxl-instagram'></i></a>
+      <a href="https://twitter.com"><i class='bx bxl-twitter'></i></a>
+    </div>
+    <div class="contact-form">
+      <br><br><a href="#">Contact Us</a><br><br>
+      <form>
+        <div class="info-box">
+          <input type="email" class="info-field" placeholder="Email" autocomplete="off" required>
+        </div>
+        <div class="info-box">
+          <input type="tel" class="info-field" placeholder="Phone Number" autocomplete="off" required>
+        </div>
+        <div class="info-box">
+          <button class="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <div>
+      <br><br><br><p style="color: white;">&copy; 2024 VogueSteps. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

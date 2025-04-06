@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account</title>
+
+  <!-- Nav Bar Style Sheet -->
+  <link rel="stylesheet" href="CSS/navbar.css">
+  <!-- Button Styles -->
+  <link rel="stylesheet" href="CSS/buttons.css">
+  <!-- Footer Style Sheet -->
+  <link rel="stylesheet" href="CSS/footer.css">
+  <!-- Account Page Style Sheet -->
+  <link rel="stylesheet" href="CSS/account_page.css">
+  <!-- Icons -->
+  <link href="https://unpkg.com/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<script src="JS/accLogged.js"></script>
+<style>
+
+</style>
+
+<body>
+
+  <!-- Main Nav Bar -->
+  <div class="navbar">
+    <div class="left-navbar">
+      <a href="index.html" class="logo"><i class='bx bxl-opera'></i></a>
+      <!-- Search Bar -->
+      <div class="searchBox">
+      </div>
+    </div>
+
+
+    <h1 id="first-name" style="font-size: 40px; margin-right: 5%;"></h1>
+    <div class="Acc_Nav">
+      <a href="favorite.html" id="fav-but" class="account"><button><i class='bx bxs-heart'></i></button></a>
+      <a href="account_page.html" id="acc-but" class="account"><button><i class='bx bx-user'></i></button></a>
+      <a href="cart.html" id="cart-but" class="account"><button><i class='bx bxs-cart'></i></button></a>
+      <a href="login.html" id="login-but" class="user"><button>Login</button></a>
+      <a href="register.html" id="signup-but" class="user"><button>Sign Up</button></a>
+      <a href="#" id="logout-but" class="user"><button>Logout</button></a>
+    </div>
+  </div>
+
+  <!-- Account Page Content -->
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <ul>
+        <li><a href="#myAccount">My Account</a></li>
+        <li><a href="#changePassword">Change Password</a></li>
+        <li><a href="#theme">Theme</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+
+
+
+    <div class="content">
+
+      <!-- My Account Section -->
+      <section id="myAccount"><br><br><br><br>
+        <h2>My Account Details</h2>
+        <div class="account-box">
+          <!-- Account Details -->
+          <div class="detail-style">
+
+            <!-- Display Users first and last name -->
+            <h4>Name</h4>
+            <button>
+              <p id="first-last">Name</p>
+            </button>
+            <!-- Display Email -->
+            <h4>Email</h4>
+            <button>
+              <p id="user-email"></p>
+            </button>
+
+            <!-- Display address -->
+            <h4>Shipping Address</h4>
+            <button>
+              <p id="user-street"></p>
+              <p id="user-city"></p>
+              <p id="user-state"></p>
+              <p id="user-zip"></p>
+            </button>
+          </div>
+
+
+        </div><br>
+
+
+        <h1>Edit Account Details</h1><br><br><br>
+
+
+        <!-- Name update -->
+        <form id="nameUpdate" action="/updateName" method="post">
+          <div class="name-fields">
+            <div class="form-group">
+              <h3>Change Account Name</h3>
+              <label for="first-name">First Name:</label>
+              <!-- <textarea id="firstname" name="firstname" placeholder="John" required></textarea> -->
+              <input id="firstname" name="firstname" type="text" placeholder="John" required>
+
+              <label for="last-name">Last Name:</label>
+              <!-- <textarea id="lastname" name="lastname" placeholder="Doe" required></textarea> -->
+              <input id="lastname" name="lastname" type="text" placeholder="Doe" required>
+
+              <button class="acc_button" type="submit">Save Changes</button>
+            </div>
+        </form>
+
+        <!-- Addresse form -->
+        <form id="updateForm" action="/updateAddress" method="post">
+          <div class="form-group">
+            <h3>Shipping Address</h3>
+           
+            <label for="street">Street:</label>
+            <input id="street" name="street" type="text" placeholder="123 Main St" required>
+
+            <label for="city">City:</label>
+            <input id="city" name="city" type="text" placeholder="Oakland" required>
+
+            <label for="state">State:</label>
+            <input id="state" name="state" type="text" placeholder="California" required>
+
+            <label for="zip">ZIP Code:</label>
+            <input id="zip" name="zip" type="text" placeholder="94607" required>
+            
+          </div>
+          <button class="acc_button" type="submit">Save Changes</button>
+        </form>
+      </section>
+
+      <!-- Change Password Section -->
+      <section id="changePassword">
+        <h3>Change Password</h3>
+        <form id="passUpdate" action="/updatePassword" method="post">
+          <div class="form-group">
+            <label for="zip">Enter Current Password:</label>
+            <input id="oldPassword" name="password" type="password" placeholder="Enter Password" required>
+            <label for="zip">Retype Current Password:</label>
+            <input id="oldPassword" name="password" type="password" placeholder="Retype Password" required>
+            <label for="zip">Enter New Password:</label>
+            <input id="newPassword" name="newPassword" type="password" placeholder="Enter New Password" required>
+            <label for="zip">Retype New Password:</label>
+            <input id="reNewPassword" name="reNewPassword" type="password" placeholder="Retype New Password"  required>
+            <button class="acc_button" type="submit">Save Changes</button>
+          </div>
+        </form>
+    </div>
+
+
+    <!-- Theme Section -->
+    <section id="theme">
+      <h2>Theme</h2>
+      <button class="acc_button" id="toggleTheme">Toggle Dark Mode</button>
+    </section>
+  </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div>
+      <a href="about_us.html">About Us</a>
+      <a href="faq.html">FAQ</a>
+    </div><br>
+    <div class="social-icons">
+      <a href="https://www.facebook.com"><i class='bx bxl-facebook'></i></a>
+      <a href="https://www.instagram.com"><i class='bx bxl-instagram'></i></a>
+      <a href="https://twitter.com"><i class='bx bxl-twitter'></i></a>
+    </div>
+    <div class="contact-form">
+      <br><br><a href="#">Contact Us</a><br><br>
+      <form>
+        <div class="info-box">
+          <input type="email" class="info-field" placeholder="Email" autocomplete="off" required>
+        </div>
+        <div class="info-box">
+          <input type="tel" class="info-field" placeholder="Phone Number" autocomplete="off" required>
+        </div>
+        <div class="info-box">
+          <button class="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <div>
+      <br><br><br>
+      <p style="color: white;">&copy; 2024 VogueSteps. All rights reserved.</p>
+    </div>
+  </footer>
+  <!-- JS -->
+  <script src="JS/account_page.js"></script>
+
+</body>
+
+</html>
